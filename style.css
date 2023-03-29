@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo&family=Nunito+Sans:wght@200;400&family=Quicksand&family=Recursive&family=Titillium+Web&family=Work+Sans&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1rem;
+    background-color: whitesmoke;
+    font-family: 'Exo', sans-serif;
+}
+header{
+    background-color: white;
+}
+button{
+    padding: 8px;
+    outline: none;
+    cursor:pointer;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+button:hover{
+    background-color: rgba(0, 0, 0,.1);
+}
+.container{
+    width: 95%;
+    margin: auto;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    padding: 18px 0;
+    background-color: white;
+}
+.nav button{
+    font-family: inherit;
+}
+.create-box{
+    width: 380px;
+    margin: 15px auto auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+}
+.create-box h2{
+    text-align: center;
+}
+.create-box textarea{
+    width: 100%;
+    border-radius: 5px;
+    font-family: inherit;
+    border: 1px solid lightgray;
+    padding: 2px 5px;
+}
+.create-box button{
+    width: fit-content;
+}
+.flashcards{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+.div{
+    width: 95%;
+    margin: auto;
+}
+.flashcard{
+    width: 31.4%;
+    height: 200px;
+    word-wrap: break-word;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+}
+.flashcard h2{
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media (max-width:1200px) {
+    .flashcard{
+        margin: auto;
+    }
+    .flashcard{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width:1024px) {
+    .flashcard{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 48%;
+    }
+}
+@media (max-width:480px) {
+    .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .create-box{
+        width: 100%;
+    }
+    .flashcard{
+        width: 100%;
+    }
+}
